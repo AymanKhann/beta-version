@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+.logo-image{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 0px;
+    padding: 4px;
+}
+
+.custom-btn{
+    background-color: #344C5C;
+}
+.custom-text-font{
+    font-family: 'Merriweather', serif;
+    font-size: 30px;
+    color: white;
+}
+a:hover {
+  color: #344C5C;
+}

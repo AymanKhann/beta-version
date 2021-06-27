@@ -1,0 +1,62 @@
+<script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js"></script>
+<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+<script src="https://raw.githack.com/fcor/arjs-gestures/master/dist/gestures.js"></script>
+
+<style>
+  .arjs-loader {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .arjs-loader div {
+    text-align: center;
+    font-size: 1.25em;
+    color: white;
+  }
+</style>
+
+<body style="margin : 0px; overflow: hidden;">
+  <div class="arjs-loader">
+    <div>Off you go to explore virtually ...</div>
+  </div>
+  <a-scene
+    arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
+    embedded
+    renderer="logarithmicDepthBuffer: true;"
+    vr-mode-ui="enabled: false"
+    gesture-detector
+    id="scene"
+  >
+    <a-nft
+      type="nft"
+      url="https://aymankhann.github.io/Temp3d/Chaukhandi-image/Chaukhandi"
+      smooth="true"
+      smoothcount="10"
+      smoothtolerance=".01"
+      smooththreshold="5"
+      raycaster="objects: .clickable"
+      emitevents="true"
+      cursor="fuse: false; rayOrigin: mouse;"
+    >
+      <a-entity
+        gltf-model="https://aymankhann.github.io/Temp3d/chaukhandi.glb"
+        scale="30 30 30"
+        position="0 0 0"
+        class="clickable"
+        gesture-handler="minScale: 0.25; maxScale: 60"
+      >
+      </a-entity>
+    </a-nft>
+    <a-entity camera></a-entity>
+  </a-scene>
+</body>
+
+

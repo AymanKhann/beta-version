@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Seyahat</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- materialize icons, css & js -->
+  <link type="text/css" href="/css/materialize.min.css" rel="stylesheet">
+  <link rel="icon" href="../img/logo.png" type="image/png" size="100x100">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap" rel="stylesheet">
+    
+  <!-- social icons --> 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    
+  <!--bootstrap-->    
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384- MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+  <!-- custom links -->    
+  <link rel="manifest" href="/manifest.json">
+  <link type="text/css" href="../css/styles.css" rel="stylesheet">
+  
+    
+  <!-- ios support -->
+  <link rel="apple-touch-icon" href="/img/icons/icon-96x96.png">
+  <meta name="apple-mobile-web-app-status-bar" content="#1C4966">
+    
+  <script type="text/javascript" src="/js/materialize.min.js"></script>
+    
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+  <!-- custom links -->    
+  <link rel="manifest" href="/manifest.json">
+  <link type="text/css" href="../css/styles.css" rel="stylesheet">
+  <link type="text/css" href="../css/arui.css" rel="stylesheet">
+
+
+<style>
+h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+body {font-family: "Open Sans"}
+.w3-bar .w3-button {
+  padding: 16px;
+  color: white;
+}
+</style>
+</head>
+    
+<body class="w3-white">
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top" style="background-color: #A4DE02">
+  <div class="w3-bar w3-card" id="myNavbar">
+    <span class="logo-image">
+    <img class="responsive-img" src="../img/icons/header.png" class="img-fluid"/></span> 
+    <a href="#" class="brand-logo custom-text-font">Seyahat</a>
+      
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+  
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1600px">
+
+  <!-- Header -->
+  <header class="w3-container w3-center w3-padding-48 w3-white" style="background-image: url(../img/arui/bgimg.jpg); background-size:cover;">
+    <h1 class="w3-xxxlarge" style="margin-top: 30px"><b>EXPLORE BEFORE ROVE</b></h1>
+    <h4>Tales Of <span class="w3-tag">Pakistan.</span></h4>
+  </header>
+
+  <!-- Image header -->
+  <header class="w3-display-container w3-wide" id="home">
+    <div class="imganim">
+        <div class="small-img">
+            <img src="../img/arui/1.png"/>
+        </div>
+        <div class="small-img">
+            <img src="../img/arui/2.png"/>
+        </div>
+        <div class="small-img">
+            <img src="../img/arui/3.png"/>
+        </div>
+        <div class="small-img">
+            <img src="../img/arui/4.png"/>
+        </div>
+        <div class="small-img">
+            <img src="../img/arui/5.png"/>
+        </div>
+        <div class="small-img">
+            <img src="../img/arui/6.png"/>
+        </div>
+        <div class="small-img">
+            <img src="../img/arui/7.png"/>
+        </div>
+        <div class="small-img">
+            <img src="../img/arui/8.png"/>
+        </div>
+        <div class="small-img">
+            <img src="../img/arui/9.png"/>
+        </div>
+      </div>
+  </header>
+
+  <!-- Grid -->
+  <div class="w3-row w3-padding w3-border">
+
+    <!-- Virtual tour entries -->
+    <div class="w3-col l8 s12" >
+    
+      <!-- Parallax-->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h4>Get to Experience<span class="w3-opacity"> -Via AR</span></h4>
+          <h2 class="w3-xxlarge">THE OFFBEAT HISTORY</h2>  
+        </div>
+
+        <div class="w3-justify">
+        
+        <!-- image slider-->    
+          <div class="vtour">
+            <div class="models">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                
+            
+            <!--images-->
+            <div class="slide1">
+              <img src="../img/arui/slider2.jpg" class="slideimg">
+              <button type="button" id="chaukhandi">View in AR</button>
+            </div>
+            <div class="slide">
+              <img src="../img/arui/slider3.jpg" class="slideimg">
+              <button type="button" id="mohatta">View in AR</button>
+            </div>
+            <div class="slide">
+              <img src="../img/arui/slider1.jpg" class="slideimg">
+              <button type="button" id="shahjahan">View in AR</button>
+            </div>
+            
+            <!--automatic navigator-->
+            <div class="navigation-auto">
+                <div class="autobtn1"></div>
+                <div class="autobtn2"></div>
+                <div class="autobtn3"></div>
+            </div>
+                
+            </div>
+        </div> 
+            
+          <p><strong>Tour Virtually!</strong> View with Augmeneted Reality. Where they want to go? What it looks to be?  History of the place? Middle-of-road art and crafts? Sound time of the year to travel?
+          </p>
+            <p>Navigate around the renowned locations of Sindh virtually. Immersing the digital world of 3d models depicting archeological, historic, religious sites and attractions with the real world and get an ample amount of informational/historical backgrounds.
+Open the AR Camera. Scan the marker-image. Pause while we prepare the Wonderland for Alice! and Boom.</p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo1')" id="myBtn"><b>Replies  </b> <span class="w3-tag w3-white">1</span></button></p>
+          <p class="w3-clear"></p>
+          <div class="w3-row w3-margin-bottom" id="demo1" style="display:none">
+            <hr>
+              <!--
+              <div class="w3-col l2 m3">
+                <img src="/w3images/avatar_smoke.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>George <span class="w3-opacity w3-medium">May 3, 2015, 6:32 PM</span></h4>
+                <p>Great blog post! Following</p>
+              </div> -->
+          </div>
+        </div>
+      </div>
+      <hr>
+        
+    <!-- END BLOG ENTRIES -->
+    </div>
+
+    <!-- About/Information menu -->
+    <div class="w3-col l4">
+      <!-- About Card -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-black">
+          <h4>AT SEYAHAT</h4>
+          <p>- We wish not to bound travelers with tour group packages and policies despite will pitch in as the white rabbit  to lead the way for local and international visitors, across the coastal sides, natural landscapes, ancient civilization remains, historic attractions and religious sites of our wonderland - Pakistan. Seyahat will take over the role of tour guide, muck in with tourists to get rid of all immediaries, pose an immersive digital experience of locations they want to visit - history, art and craft, locality. Assist users with recommendations, optimal routes, hotels in real time with an unparalleled user-oriented communication channel. Precisely, a cross-platform all-rounder app, a fun engagement to virtually tour Pakistan and plan cost effective customized trips later.   
+</p>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Posts -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>UNDISCOVERED GEMS</h4>
+        </div>
+        <ul class="w3-ul w3-hoverable w3-white">
+          <li class="w3-padding-16">
+            <img src="../img/arui/historic.jpg" alt="Image" class="w3-left w3-margin-right" style="width:100px">
+            <h4>Historical Heritage</h4>
+            <br>
+            <span>Discover some of the most interesting sites in Pakistan that have been highlighted by UNESCO, including palaces, religious sites, and historical settlements. All of these sites are incredible remnants of Pakistan’s diverse and extensive past, and visiting them will harbor a rich and cultural journey through the history of Pakistan.</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="../img/arui/archeological.jpg" alt="Image" class="w3-left w3-margin-right" style="width:100px">
+            <h4>Archeological Artistry</h4>
+            <br>
+            <span>Pakistan has been a cradle of civilizations through the ages. It possesses one of the oldest and most distinguished cultural heritages of the world.In dealing with the beginning of the historic period of West Pakistan, excavations at Bhir Mound, the earliest of the three city-states of Taxila, in the Gandhara region provide abundant and clear evidence that it flourished for a considerable time before the invasion of the Greeks under Alexander the Great in 326 B.C.</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="../img/arui/religious.jpg" alt="Image" class="w3-left w3-margin-right" style="width:100px">
+            <h4>Religious Rubies</h4>
+            <br>
+            <span>Pakistan is a land of many different colors, cultures and faiths. Each faith has it’s own set of beliefs and practices, which make Pakistan a diverse place. Pakistan is home to one of the most significant Sikh sites of worship. The work for Holy Temples and Churches also cintributes in. </span>
+          </li>
+        </ul>
+      </div>
+      <hr>
+
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Follow Us</h4>
+        </div>
+        <div class="w3-container w3-xlarge w3-padding">
+          <i class="fa fa-facebook-official w3-hover-opacity"></i>
+          <i class="fa fa-instagram w3-hover-opacity"></i>
+          <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+      </div>
+      <hr>
+      
+      <!-- Subscribe -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Subscribe</h4>
+        </div>
+        <div class="w3-container w3-white">
+          <p>Enter your e-mail below and get notified on the latest travel packages and destinations.</p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
+          <p><button type="button" onclick="document.getElementById('subscribe').style.display='block'" class="w3-button w3-block w3-red">SIGN UP</button></p>
+        </div>
+      </div>
+
+    <!-- END About/Intro Menu -->
+    </div>
+
+  <!-- END GRID -->
+  </div>
+
+<!-- END w3-content -->
+</div>
+
+<!-- Subscribe Modal -->
+<div id="subscribe" class="w3-modal w3-animate-opacity">
+  <div class="w3-modal-content" style="padding:32px">
+    <div class="w3-container w3-white">
+      <i onclick="document.getElementById('subscribe').style.display='none'" class="fa fa-remove w3-transparent w3-button w3-xlarge w3-right"></i>
+      <h2 class="w3-wide">SUBSCRIBE</h2>
+      <p>Join my mailing list to receive updates on trips and travel packages.</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('subscribe').style.display='none'">SIGN UP</button>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-dark-grey" style="padding:32px">
+  <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+</footer>
+
+<script>
+ document.getElementById("chaukhandi").onclick = function () {
+        location.href = "../pages/tour1.html";
+    };
+    document.getElementById("mohatta").onclick = function () {
+        location.href = "../pages/tour2.html";
+    };
+    document.getElementById("shahjahan").onclick = function () {
+        location.href = "../pages/tour3.html";
+    };
+// Toggle between hiding and showing blog replies/comments
+document.getElementById("myBtn").click();
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+function likeFunction(x) {
+  x.style.fontWeight = "bold";
+  x.innerHTML = "✓ Liked";
+}
+</script>
+
+</body>
+</html>

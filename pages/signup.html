@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <html>
+    <head>
+      <title>Seyahat</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta charset="utf-8" />
+      <link rel="icon" href="../img/logo.png" type="image/png" size="100x100">
+      <link rel="stylesheet" type="text/css" href="../css/signup_style.css" />
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      />
+      <link
+        href="https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600"
+        rel="stylesheet"
+        type="text/css"
+      />
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    </head>
+
+    <body class="body">
+      <div class="login-page">
+        <div class="form">
+          <form>
+            <img src="../img/logo.png"/>
+            <input type="text" placeholder="full name" />
+            <input type="text" placeholder="email address" />
+            <!--<input type="text" placeholder="pick a username" />-->
+            <div class="input-group">
+              <input type="password" class="form-control" data-toggle="password"id="password" placeholder="Password"/>
+                <div class="input-group-append">
+                  <div class="input-group-text"><i class="fas fa-eye" onclick="show()"></i></div>
+                </div>
+            </div>
+            <br>
+            <br>
+          </form>
+
+          <form class="login-form">
+            <button type="button" id="register">SIGN UP</button>
+          </form>
+        </div>
+      </div>
+      <script type="text/javascript">
+        document.getElementById("register").onclick = function () {
+            location.href = "login.html";
+        };
+    </script>    
+    
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+    </body>
+  </html>
